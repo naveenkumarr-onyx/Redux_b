@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css"
+  />
+  <!-- data-search js -->
+  <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <style>
+      .search-bar {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .search-bar input {
+        flex: 1;
+        border: none;
+        outline: none;
+      }
+
+      .search-bar button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+      table,thead,th,td,tr{
+        border: 1px solid black;
+        padding: 10px;
+      }
+      table{
+        margin-top: 20px;
+        padding: 20px;
+        margin-left: 10px;
+        border: 2px solid black;
+      }
+      th{
+        border: 1px solid red;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="root"></div>
+        <div>
+            <div>
+                <input type="text" id="search-input" class="search-bar" placeholder="Search...">
+                <button onclick=search()>search</button>
+            </div>
+          
+            <div class="searchable-item">
+                <h2>Item 1</h2>
+                <p>This is the content of item 1.</p>
+              </div>
+              
+              <div class="searchable-item">
+                <h2>Item 2</h2>
+                <p>This is the content of item 2.</p>
+              </div>
+              
+              <div class="searchable-item">
+                <h2>Item 3</h2>
+                <p>This is the content of item 3.</p>
+              </div>
+              <button onclick="clickEvent()">Click me!!!</button>
+        </div> -->
+
+    <input type="text" id="searchBar" placeholder="Search..." />
+    <div id="portfolio">
+      <h1>one</h1>
+      <h1>two</h1>
+      <h1>Three</h1>
+      <h1>Four</h1>
+      <h1>Five</h1>
+      <h1>Six</h1>
+      <h1>seven</h1>
+    </div>
+
+    <div id="hid">
+      <h2>This is a heading</h2>
+
+      <p>This is a paragraph.</p>
+      <p>This is another paragraph.</p>
+    </div>
+    <img src="" id="userimg" alt="image">
+    <input type="tel" maxlength="10" pattern="\d{10}">
+    <button id="btn">Click me to hide paragraphs</button>
+
+
+    <table class="tab" id="tableBody">
+      <thead class="table table-dark">
+        <th>strMeal</th>
+        <th>strMealThumb</th>
+        <th>idMeal</th>
+      </thead>
+    </table>
+    <div class="loader"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
